@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>أحداث تيك توك</title>
+    <style>
+        body { background: transparent; color: #fff; font-family: Tahoma, sans-serif; padding: 10px; margin: 0; }
+        .event-item { background: rgba(0,0,0,0.6); padding: 10px; margin-bottom: 8px; border-radius: 8px; border-right: 4px solid #00f2fe; }
+    </style>
+</head>
+<body>
+    <div id="events-container">جاري استقبال الأحداث...</div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const uid = urlParams.get('uid');
+        document.getElementById('events-container').innerText = 'متصل بنجاح مع الحساب: ' + uid;
+    </script>
+</body>
+</html>
